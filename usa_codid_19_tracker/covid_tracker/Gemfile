@@ -1,0 +1,17 @@
+# frozen_string_literal: true
+
+source "https://rubygems.org"
+
+# Specify your gem's dependencies in covid_tracker.gemspec
+gemspec
+
+gem "rake", "~> 13.0"
+
+#sending request to server and fetch back document
+gem "open-uri"
+# takes open-uri document and turns into ruby code to figure out what we want from document 
+gem "nokogiri"
+# allow for debug
+gem "pry"
+# hash passwords
+gem 'bcrypt'
